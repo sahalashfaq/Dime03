@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { 
+    font-family: "Poppins", sans-serif;
+    /* transition: .5s ease-in-out; */
+}
+
+:root {
+    --blue: #032892;
+    --white: white;
+    --yellow: #f5ce41;
+    --input-background: #2b508d;
+    --black: black;
+    --grey: rgb(213, 213, 213);
+    --button-gradient: linear-gradient(to right, #2e76af, #204c92);
+    --border-color: #12349f;
+    --place-holder-color: #6387bc;
+    --chart-3: #e5e5e5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 10px 20px;
+    padding-bottom: 0;
+}
+
+header {
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--border-color);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li {
+    display: flex;
+    list-style: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+header nav ul li:nth-of-type(1) {
+    opacity: 1;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+header .logo-container .logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--yellow);
+    border-radius: 1000px;
+}
+
+header .information-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+header .information-container button:nth-of-type(1) {
+    color: var(--white);
+    font-weight: 500;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .information-container button:nth-of-type(2) {
+    background: var(--button-gradient);
+    padding: 12px 25px;
+    outline: none;
+    border: none;
+    border-radius: 1000px;
+    color: var(--white);
+    cursor: pointer;
+    border: 3px solid var(--border-color);
+}
+
+.hero {
+    margin: 150px auto;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    height: 600px;
+    width: 50px;
+    background: var(--white);
+    border-radius: 1000px;
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    z-index: -5;
+    filter: blur(100px);
+}
+
+.hero::before {
+    content: "";
+    height: 600px;
+    width: 50px;
+    background: var(--white);
+    border-radius: 1000px;
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    z-index: -5;
+    filter: blur(100px);
+}
+
+.hero .users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background: var(--input-background);
+    padding: 5px 8px;
+    padding-right: 20px;
+    border-radius: 1000px;
+    width: max-content;
+    margin: 0 auto;
+    border: 3px solid #2b509e;
+}
+
+.hero .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .users img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.hero .users img:nth-of-type(1) {
+    background: #ffffff;
+}
+
+.hero .users img:nth-of-type(2) {
+    background: #d1e1ea;
+    margin-left: -10px;
+}
+
+.hero .users img:nth-of-type(3) {
+    background: #d09da3;
+    margin-left: -10px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hero p {
+    color: var(--grey);
+    font-weight: 450;
+}
+
+.hero .input-container {
+    display: flex;
+    background: var(--input-background);
+    padding: 6px 6px;
+    display: flex;
+    max-width: max-content;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1000px;
+    border: 3px solid #2b509e;
+}
+
+.hero .input-container button,
+.main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--yellow);
+    border: none;
+    outline: none;
+    font-weight: 600;
+    padding: 8px 20px;
+    cursor: pointer;
+    gap: 15px;
+    font-size: medium;
+    padding-right: 10px;
+    border-radius: 1000px;
+}
+
+.hero .input-container button span,
+.main-btn span {
+    padding: 10px;
+    border-radius: 1000px;
+    background: var(--white);
+    transform: rotate(-40deg);
+}
+
+.hero .input-container input {
+    background: none;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    color: var(--white);
+    width: 400px;
+    padding-right: 0px;
+}
+
+.hero .input-container input::placeholder {
+    color: var(--place-holder-color);
+    font-weight: 500;
+    font-size: large;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    background: var(--white);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 40px 40px;
+    padding-bottom: 30px;
+    color: var(--black);
+}
+
+.content-section .left h1 {
+    font-size: 3.5rem;
+}
+
+.content-section .left p {
+    margin: 20px 0;
+    margin-top: -20px;
+}
+.content-section .right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-section .right::before{
+    height: 300px;
+    width:100%;
+    /* background: var(--yellow); */
+    content:'';
+    position: absolute;
+    top:0;
+}
+.content-section .right img{
+    height: 100%;
+    width: 550px;
+    margin-bottom: -80px;
+}
